@@ -21,7 +21,7 @@ This is a sample ASP.NET Core Web API project that demonstrates authentication a
 
 ### Installation
 Clone this repository to your local machine.
-Open the project in your preferred IDE or text editor by clicking the ProcessR_Challenge.sln file.
+Open the project in your preferred IDE or text editor by clicking the ProcessR_Challenge.sln file in the root folder.
 
 
 ## Database Setup

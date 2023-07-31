@@ -5,8 +5,6 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthAPI", "AuthAPI\AuthAPI.csproj", "{1A4386A3-5BE7-45EE-A3A3-1531DF8D2C87}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FruitsAPI", "FruitsAPI\FruitsAPI.csproj", "{49466EE5-984B-413C-BEA2-A4EC8A9C968D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{1A4386A3-5BE7-45EE-A3A3-1531DF8D2C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A4386A3-5BE7-45EE-A3A3-1531DF8D2C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A4386A3-5BE7-45EE-A3A3-1531DF8D2C87}.Release|Any CPU.Build.0 = Release|Any CPU
-		{49466EE5-984B-413C-BEA2-A4EC8A9C968D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{49466EE5-984B-413C-BEA2-A4EC8A9C968D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{49466EE5-984B-413C-BEA2-A4EC8A9C968D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{49466EE5-984B-413C-BEA2-A4EC8A9C968D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

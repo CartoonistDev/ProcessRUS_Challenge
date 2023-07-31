@@ -10,13 +10,16 @@ namespace AuthAPI.Service
 {
     public class JwtTokenGenerator : IJwtTokenGenerator
     {
-        private readonly JwtOptions _jwt;
-        public JwtTokenGenerator(IOptions<JwtOptions> jwt) 
+        private readonly JwtOptions _jwt; 
+        private readonly IConfiguration _config;
+        public JwtTokenGenerator(IOptions<JwtOptions> jwt, IConfiguration config)
         {
-            _jwt= jwt.Value;
+            _jwt = jwt.Value;
+            _config = config;
         }
         public string GenerateToken(ApplicationUser applicationUser, IEnumerable<string> roles)
         {
+            int validPeriod = _config.GetSection("ApiSettings").GetValue<int>("JwtOptions:TokenValidity");
             //Generate token based on application user using Jwt Security Token Handler
             var tokenHandler = new JwtSecurityTokenHandler();
 
@@ -36,7 +39,7 @@ namespace AuthAPI.Service
                 Audience= _jwt.Audience,
                 Issuer= _jwt.Issuer,
                 Subject = new ClaimsIdentity(claimList),
-                Expires = DateTime.UtcNow.AddDays(7),
+                Expires = DateTime.UtcNow.AddDays(validPeriod),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
             };
 

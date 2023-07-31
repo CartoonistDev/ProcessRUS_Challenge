@@ -45,6 +45,7 @@ namespace AuthAPI.Controllers
 
                 return BadRequest(_responseDto);
             }
+            _responseDto.Message = "Login Successful";
             _responseDto.Result = loginResponse;
             return Ok(_responseDto);
         }

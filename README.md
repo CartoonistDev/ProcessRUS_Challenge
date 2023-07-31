@@ -39,7 +39,7 @@ The application will start on https://localhost:2323 by default.
 
 
 
-#### Endpoints
+### Endpoints
 
 ##### AuthAPIController Endpoints
 

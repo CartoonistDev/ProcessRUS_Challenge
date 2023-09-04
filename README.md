@@ -111,6 +111,8 @@ Remember to keep sensitive information like database connection strings and JWT 
 
 Feel free to explore and extend the functionality of this Web API according to your project requirements.
 
+### Adding CI/CD
+
 
 ### License
 This project is licensed under the MIT License.
